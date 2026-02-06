@@ -9,19 +9,19 @@ public class Book {
     }
 
 
-    public String getBookName(String bookName) {
+    public String getBookName() {
         return bookName;
     }
 
-    public String getAuthorName(String authorName) {
+    public String getAuthorName() {
         return authorName;
     }
 
-    public void setBookName() {
+    public void setBookName(String bookName) {
         this.bookName = bookName;
     }
 
-    public void setAuthorName() {
+    public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
 
