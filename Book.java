@@ -2,17 +2,11 @@ public class Book {
     
     public String bookName;
     public String authorName;
-    public String[][] bookList;
 
-    public Book(String bookName, String authorName, String[][] bookList) {
+    public Book(String bookName, String authorName) {
         this.bookName = bookName;
         this.authorName = authorName;
-        this.bookList = bookList;
     }
-
-    
-
-
 
 
     public String getBookName(String bookName) {
@@ -23,10 +17,6 @@ public class Book {
         return authorName;
     }
 
-    public String[][] getAuthorName(String[][] bookList) {
-        return bookList;
-    }
-
     public void setBookName() {
         this.bookName = bookName;
     }
@@ -35,8 +25,5 @@ public class Book {
         this.authorName = authorName;
     }
 
-    public void setBookList() {
-        this.bookList = bookList;
-    }
 
 }
