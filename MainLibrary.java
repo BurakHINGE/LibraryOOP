@@ -10,6 +10,7 @@ public class MainLibrary {
         System.out.println("Kütüphaneye Hoş Geldiniz!");
         System.out.println("1-Giriş Yap\n2-Kayıt Ol\n3-Çıkış Yap");
         int secenek = input.nextInt();
+        input.nextLine();
 
         while (secenek < 1 || secenek > 3) {
             System.out.println("Lütfen geçerli bir işlem giriniz!");
