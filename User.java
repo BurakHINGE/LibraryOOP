@@ -12,12 +12,21 @@ public class User {
         this.bookList = new ArrayList<>();
     }
 
-    public String addBooks(String bookName, String authorName) {
+    public boolean addBooks(String bookName, String authorName) {
 
+        for (Book book : bookList) {
+    
+            if (book.getBookName().equalsIgnoreCase(bookName) &&
+                book.getAuthorName().equalsIgnoreCase(authorName)) {
+    
+                return false; 
+            }
+        }
+    
         Book newBook = new Book(bookName, authorName);
         bookList.add(newBook);
-
-        return "Kitabınız kitaplığınıza eklendi.";
+    
+        return true; 
     }
 
     public void listBooks() {
@@ -33,6 +42,10 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public ArrayList<Book> getBooks() {
+        return bookList;
     }
 
     public void setUsername(String username) {
