@@ -91,11 +91,16 @@ public class MainLibrary {
 
                 User loggedInUser = library.login(kullaniciAdi, sifre);
 
+                if (loggedInUser == null) {
+                    System.out.println("Hatalı kullanıcı adı veya şifre!");
+                    break;
+                }
+
 
                 while (true) {
                     System.out.println("Kitaplığına hoş geldin " + loggedInUser.getUsername());
                     System.out.println("-----İşlem Seçiniz-----");
-                    System.out.println("1-Kitap Ekle\n2-Kitaplığını Gör");
+                    System.out.println("1-Kitap Ekle\n2-Kitaplığını Gör\n3-Çıkış");
                     int secim = input.nextInt();
                     input.nextLine();
 
@@ -124,18 +129,26 @@ public class MainLibrary {
                     }
                     else if (secim == 1) {
 
-                        System.out.println("Eklemek istediğiniz kitabın adını giriniz: ");
-                        String kitapAdi = input.nextLine();
+                        boolean added = false;
 
-                        System.out.println("Kitabınızın yazarının adını giriniz: ");
-                        String yazarAdi = input.nextLine();
+                        while(!added) {
+                            System.out.println("Eklemek istediğiniz kitabın adını giriniz: ");
+                            String kitapAdi = input.nextLine();
 
-                        
+                            System.out.println("Kitabınızın yazarının adını giriniz: ");
+                            String yazarAdi = input.nextLine();
 
-                        String book = loggedInUser.addBooks(kitapAdi, yazarAdi);
+                            added = loggedInUser.addBooks(kitapAdi, yazarAdi);
+                            JsonManager.saveUsers(library.getUsers());
 
-
-
+                            if (!added) {
+                                System.out.println("Bu kitap zaten kitaplığında bulunuyor.");
+                            }
+                            else {
+                                System.out.println("Kitabınız kitaplığınıza başarıyla eklendi.");
+                            } 
+                            
+                        }
 
                     }
 
@@ -145,7 +158,6 @@ public class MainLibrary {
 
         }
         
-
     }
 }
 
