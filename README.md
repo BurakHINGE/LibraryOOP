@@ -13,7 +13,7 @@
 | Language / Dil | Status / Durum |
 |---------------|----------------|
 | English | Coming Soon |
-| Türkçe | Yakında |
+| Türkçe | ✅ |
 
 ---
 
@@ -73,7 +73,7 @@ java MainLibrary
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
-| 1.0.0   | 2026-02-04 | Initial release. / İlk sürüm. |
+| 1.0.0   | 2026-02-14 | Initial release. / İlk sürüm. |
 
 ---
 
