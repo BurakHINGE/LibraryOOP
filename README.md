@@ -32,13 +32,44 @@ The project focuses on practicing:
 - JSON-based data persistence
 - Console-based application flow
 
-### 🚀 Features
+---
 
+# ✨ Features
 
-### 📝 Usage
+- 👤 User registration system  
+- 🔐 Secure login mechanism  
+- 📚 Personal book list for each user  
+- ➕ Add books with title and author  
+- 📖 View saved books anytime after login  
+- 💾 Persistent data storage using JSON  
+- 🗂 Automatic JSON file creation if it does not exist  
+- 🧱 Object-Oriented design (Library, User, Book classes)
+
+---
+
+# 🚀 Usage
+
+## 🟢 macOS / Linux
+
+### Compile
 ```bash
-javac MainLibrary.java
-java MainLibrary
+javac -cp ".:lib/json.jar" Codes/*.java
+```
+### Run
+```bash
+java -cp ".:lib/json.jar:Codes" MainLibrary
+```
+
+## 🟢 Windows
+
+### Compile
+```bash
+javbash
+javac -cp ".;lib/json.jar" Codes\*.java
+```
+### Run
+```bash
+java -cp ".;lib/json.jar;Codes" MainLibrary
 ```
 
 ---
@@ -58,13 +89,42 @@ Projenin amacı:
 - JSON ile veri kalıcılığı sağlamak
 - Konsol tabanlı uygulama mantığını öğrenmek
 
-### 🚀 Özellikler
+---
 
+## ✨ Özellikler
 
-### 📝 Kullanım
+- 👤 Kullanıcı kayıt sistemi  
+- 🔐 Güvenli giriş mekanizması  
+- 📚 Her kullanıcı için kişisel kitap listesi  
+- ➕ Kitap adı ve yazar bilgisi ekleme  
+- 📖 Giriş yaptıktan sonra kayıtlı kitapları görüntüleme  
+- 💾 JSON ile kalıcı veri saklama  
+- 🗂 JSON dosyası yoksa otomatik oluşturma  
+- 🧱 Nesne Yönelimli Programlama tasarımı (Library, User, Book sınıfları)
+
+---
+
+## 🟢 macOS / Linux
+
+### Derleme
 ```bash
-javac MainLibrary.java
-java MainLibrary
+javac -cp ".:lib/json.jar" Codes/*.java
+```
+### Çalıştırma
+```bash
+java -cp ".:lib/json.jar:Codes" MainLibrary
+```
+
+## 🟢 Windows
+
+### Derleme
+```bash
+javbash
+javac -cp ".;lib/json.jar" Codes\*.java
+```
+### Çalıştırma
+```bash
+java -cp ".;lib/json.jar;Codes" MainLibrary
 ```
 
 ---
