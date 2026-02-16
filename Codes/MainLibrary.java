@@ -99,7 +99,7 @@ public class MainLibrary {
 
                     if (secim == 3) {
                         System.out.println("Kütüphaneden çıkış yapılıyor...");
-                        return;
+                        break;
                     }
                     else if (secim == 2) {
 
