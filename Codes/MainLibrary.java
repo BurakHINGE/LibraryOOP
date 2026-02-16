@@ -36,16 +36,9 @@ public class MainLibrary {
                 String sifre = input.nextLine();
 
                 System.out.println("Aynı şifreyi tekrar giriniz: ");
-                String testSifre = input.nextLine();
+                String tekrarSifre = input.nextLine();
 
-                while (!sifre.equals(testSifre)) {
-                    System.out.println("Farklı şifreler girdiniz, lütfen tekrar deneyin.");
-                    System.out.println("Şifre Belirleyiniz: ");
-                    sifre = input.nextLine();
-
-                    System.out.println("Aynı şifreyi tekrar giriniz: ");
-                    testSifre = input.nextLine();
-                }
+                sifre = testSifre(sifre, tekrarSifre, input);
 
                 boolean isCorrect = library.register(kullaniciAdi, sifre);
 
@@ -60,16 +53,9 @@ public class MainLibrary {
                     sifre = input.nextLine();
 
                     System.out.println("Aynı şifreyi tekrar giriniz: ");
-                    testSifre = input.nextLine();
+                    tekrarSifre = input.nextLine();
 
-                    while (!sifre.equals(testSifre)) {
-                        System.out.println("Farklı şifreler girdiniz, lütfen tekrar deneyin.");
-                        System.out.println("Şifre Belirleyiniz: ");
-                        sifre = input.nextLine();
-
-                        System.out.println("Aynı şifreyi tekrar giriniz: ");
-                        testSifre = input.nextLine();
-                    }
+                    sifre = testSifre(sifre, tekrarSifre, input);
 
                     isCorrect = library.register(kullaniciAdi, sifre);
 
@@ -159,5 +145,20 @@ public class MainLibrary {
         }
         
     }
+
+    public static String testSifre(String pass, String testPass, Scanner input) {
+
+        while (!pass.equals(testPass)) {
+            System.out.println("Farklı şifreler girdiniz, lütfen tekrar deneyin.");
+            System.out.println("Şifrenizi giriniz: ");
+            pass = input.nextLine();
+            System.out.println("Aynı şifreyi tekrar giriniz: ");
+            testPass = input.nextLine();
+        }
+
+        return pass;
+
+    }
+
 }
 
