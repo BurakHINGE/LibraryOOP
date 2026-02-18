@@ -14,6 +14,9 @@ public class User {
 
     public boolean addBooks(String bookName, String authorName) {
 
+        capitalizeWords(bookName);
+        capitalizeWords(authorName);
+
         for (Book book : bookList) {
     
             if (book.getBookName().equalsIgnoreCase(bookName) &&
@@ -34,6 +37,22 @@ public class User {
         for (Book book : bookList) {
             System.out.println(book.getBookName() + " - " + book.getAuthorName());
         }
+    }
+
+    private String capitalizeWords(String text) {
+
+        String[] words = text.split(" ");
+
+        StringBuilder result = new StringBuilder();
+
+        for (String word : words) {
+            if(!word.isEmpty()) {
+                result.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1)).append(" ");
+            }
+        }
+
+        return result.toString().trim();
+
     }
 
     public String getUsername() {
