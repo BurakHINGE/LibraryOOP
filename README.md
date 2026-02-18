@@ -5,8 +5,8 @@
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.0.0  
- ● Geçerli Sürüm: 1.0.0
+ ● Current Version: 1.0.1
+ ● Geçerli Sürüm: 1.0.1
 
 ---
  
@@ -133,7 +133,8 @@ java -cp ".;lib/json.jar;Codes" MainLibrary
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
-| 1.0.0   | 2026-02-14 | Initial release. / İlk sürüm. |
+| v1.0.1  | 2026-02-17 | Checking password method has been created / Parola kontrolü metodu oluşturuldu |
+| v1.0.0  | 2026-02-14 | Initial release / İlk sürüm |
 
 ---
 
