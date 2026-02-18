@@ -5,8 +5,8 @@
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.0.1
- ● Geçerli Sürüm: 1.0.1
+ ● Current Version: 1.0.2
+ ● Geçerli Sürüm: 1.0.2
 
 ---
  
@@ -133,6 +133,7 @@ java -cp ".;lib/json.jar;Codes" MainLibrary
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
+| v1.0.2  | 2026-02-18 | Automatically capitalize the first letter of book and author names / Kitap ve yazar adlarının ilk harflerini otomatik büyütme eklendi|
 | v1.0.1  | 2026-02-17 | Checking password method has been created / Parola kontrolü metodu oluşturuldu |
 | v1.0.0  | 2026-02-14 | Initial release / İlk sürüm |
 
