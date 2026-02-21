@@ -64,7 +64,7 @@ public class MainLibrary {
                 System.out.println("Hesabınız oluşturuldu!");
                 System.out.println("Artık istediğiniz kitapları ve yazarlarını kitaplığınıza ekleyebilirsiniz.");
                 System.out.println("Tekrardan giriş yapmalısınız:");
-                break;
+                continue;
 
             }
             else if(secenek == 1) {
@@ -79,7 +79,7 @@ public class MainLibrary {
 
                 if (loggedInUser == null) {
                     System.out.println("Hatalı kullanıcı adı veya şifre!");
-                    break;
+                    continue;
                 }
 
 
