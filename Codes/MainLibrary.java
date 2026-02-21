@@ -7,7 +7,7 @@ public class MainLibrary {
 
         Library library = new Library();
 
-        while (true) {
+        while (true) { //menu
         
             System.out.println("Kütüphaneye Hoş Geldiniz!");
             System.out.println("1-Giriş Yap\n2-Kayıt Ol\n3-Çıkış Yap");
@@ -22,11 +22,11 @@ public class MainLibrary {
 
             }
 
-            if (secenek == 3) {
+            if (secenek == 3) { //exit program
                 System.out.println("Kütüphaneden çıkış yapılıyor...");
                 return;
             }
-            else if (secenek == 2) {
+            else if (secenek == 2) { //register
 
                 System.out.println("-----Kayıt Ol-----");
                 System.out.println("Kullanıcı Adı Seçiniz: ");
@@ -67,7 +67,7 @@ public class MainLibrary {
                 continue;
 
             }
-            else if(secenek == 1) {
+            else if(secenek == 1) { //login
 
                 System.out.println("Giriş yapmak için kullanıcı adınızı giriniz: ");
                 String kullaniciAdi = input.nextLine();
@@ -97,11 +97,11 @@ public class MainLibrary {
                         input.nextLine();
                     }
 
-                    if (secim == 3) {
-                        System.out.println("Kütüphaneden çıkış yapılıyor...");
+                    if (secim == 3) { //exit bookshelf
+                        System.out.println("Kitaplıktan çıkış yapılıyor...");
                         break;
                     }
-                    else if (secim == 2) {
+                    else if (secim == 2) { //list books
 
                         boolean empty = loggedInUser.getBooks().isEmpty();
 
@@ -113,7 +113,7 @@ public class MainLibrary {
                         }
                     
                     }
-                    else if (secim == 1) {
+                    else if (secim == 1) { //add book
 
                         boolean added = false;
 
