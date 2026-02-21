@@ -37,6 +37,15 @@ public class Library {
         return null;
     }
 
+    public boolean isAllowedPassword(String password) {
+
+        if (password.length() < 8) {
+            return false;
+        }
+
+        return true;
+    }
+
     public ArrayList<User> getUsers() {
         return users;
     }

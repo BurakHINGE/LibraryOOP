@@ -35,6 +35,16 @@ public class MainLibrary {
                 System.out.println("Şifre Belirleyiniz: ");
                 String sifre = input.nextLine();
 
+                boolean isCorrectPassword = library.isAllowedPassword(sifre);
+
+                while (!isCorrectPassword) {
+                    System.out.println("Şifreniz en az 8 karakter uzunluğunda olmalıdır.");
+                    System.out.println("Tekrar şifre giriniz: ");
+                    sifre = input.nextLine();
+                    
+                    isCorrectPassword = library.isAllowedPassword(sifre);
+                }
+
                 System.out.println("Aynı şifreyi tekrar giriniz: ");
                 String tekrarSifre = input.nextLine();
 
