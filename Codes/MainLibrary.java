@@ -35,13 +35,63 @@ public class MainLibrary {
                 System.out.println("Şifre Belirleyiniz: ");
                 String sifre = input.nextLine();
 
-                boolean isCorrectPassword = library.isAllowedPassword(sifre);
+                int isCorrectPassword = library.isAllowedPassword(sifre);
 
-                while (!isCorrectPassword) {
-                    System.out.println("Şifreniz en az 8 karakter uzunluğunda olmalıdır.");
-                    System.out.println("Tekrar şifre giriniz: ");
-                    sifre = input.nextLine();
+                while (!(isCorrectPassword == 8)) {
+
+                    switch (isCorrectPassword) {
                     
+                        case 0: {
+                            System.out.println("Şifreniz çok kısa lütfen en az 8 karakterli şifre oluşturun!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 1: {
+                            System.out.println("Şifrenizde en az birer adet küçük, büyük ve özel karakter bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 2: {
+                            System.out.println("Şifrenizde en az birer adet büyük ve küçük harf bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 3: {
+                            System.out.println("Şifrenizde en az birer adet büyük ve özel karakter bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 4: {
+                            System.out.println("Şifrenizde en az birer adet küçük ve özel karakter bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 5: {
+                            System.out.println("Şifrenizde en az bir adet özel karakter bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 6: {
+                            System.out.println("Şifrenizde en az bir adet küçük harf bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+                        case 7: {
+                            System.out.println("Şifrenizde en az bir adet büyük harf bulunmalıdır!");
+                            System.out.println("Şifrenizi giriniz: ");
+                            sifre = input.nextLine();
+                            break;
+                        }
+
+                    }
+
                     isCorrectPassword = library.isAllowedPassword(sifre);
                 }
 
