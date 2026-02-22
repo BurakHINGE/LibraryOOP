@@ -5,8 +5,8 @@
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.0.3
- ● Geçerli Sürüm: 1.0.3
+ ● Current Version: 1.1.0
+ ● Geçerli Sürüm: 1.1.0
 
 ---
  
@@ -37,7 +37,8 @@ The project focuses on practicing:
 # ✨ Features
 
 - 👤 User registration system  
-- 🔐 Secure login mechanism  
+- 🔐 Secure login mechanism 
+- 🔐 Password requirements
 - 📚 Personal book list for each user  
 - ➕ Add books with title and author  
 - 📖 View saved books anytime after login  
@@ -95,6 +96,7 @@ Projenin amacı:
 
 - 👤 Kullanıcı kayıt sistemi  
 - 🔐 Güvenli giriş mekanizması  
+- 🔐 Şifre gereklilikleri
 - 📚 Her kullanıcı için kişisel kitap listesi  
 - ➕ Kitap adı ve yazar bilgisi ekleme  
 - 📖 Giriş yaptıktan sonra kayıtlı kitapları görüntüleme  
@@ -133,6 +135,7 @@ java -cp ".;lib/json.jar;Codes" MainLibrary
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
+| v1.1.0  | 2026-02-22 | Password requirements have been created. / Şifre gereksinimleri eklendi |
 | v1.0.3  | 2026-02-21 | Min password length requirement has been added / Minimum şifre uzunluğu gerekliliği eklendi. |
 | v1.0.2  | 2026-02-18 | Automatically capitalize the first letter of book and author names / Kitap ve yazar adlarının ilk harflerini otomatik büyütme eklendi|
 | v1.0.1  | 2026-02-17 | Checking password method has been created / Parola kontrolü metodu oluşturuldu |
